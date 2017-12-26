@@ -1,4 +1,4 @@
 ﻿<span id="a">c@ttaneo</span>:<span id="b">~</span><span id="c">$</span> cat bruno.txt<br/><br/>
 <p>Hola, soy Bruno Cattáneo de Uruguay.<p>Soy estudiante y actualmente me desempeño como programador.</p>
 <p>Me gusta mucho todo lo relacionado con la ciencia y la tecnología. También me apasiona la música y las artes marciales.</p>
-Si querés contactarte conmigo, no dudes en enviarme un <a href="mailto:c@ttaneo.uy">email</a>.<br/>También podés visitar mi <a href="http://blog.cattaneo.uy">blog</a>.
+Si querés contactarte conmigo, no dudes en enviarme un <a href="mailto:c@ttaneo.uy">email</a>.<br/>También podés visitar mi <a href="http://github.com/bcattaneo">página de GitHub</a> o mi <a href="http://blog.cattaneo.uy">blog</a>.
