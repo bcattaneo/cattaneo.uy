@@ -6,7 +6,8 @@ const screens = [
     `<p>Hey, my name is <span class="directional">Bruno Cattáneo</span>.</p>
     <p>Press <span class="directional">◄ ►</span> to know more about me</p>`,
 
-    `<p>Computer engineering (CS) student.</p>
+    `<p>I'm from <a href="https://en.wikipedia.org/wiki/Uruguay">Uruguay</a></p>
+    <p>Computer engineering (CS) student.</p>
     <p>Passionate about programming in general, <br>trying to focus on low level development <br>and (recently) game development as well.</p>`
 ];
 
@@ -25,7 +26,6 @@ const min = 10;
 const initial = 250;
 
 let carPos = 0;
-let showTip = true;
 let screen = 2;
 
 function init() {
