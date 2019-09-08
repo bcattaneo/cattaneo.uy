@@ -1,8 +1,13 @@
 const screens = [
-    `<p>pepe<p>`,
-    `<p>Hey, my name is Bruno Cattáneo.</p>
+    `<p>email: <a href="mailto:c@ttaneo.uy">c@ttaneo.uy</a><p>
+    <p>github: <a href="https://github.com/bcattaneo">github.com/bcattaneo</a><p>
+    <p>Feel free to message me!</p>`,
+
+    `<p>Hey, my name is <span class="directional">Bruno Cattáneo</span>.</p>
     <p>Press <span class="directional">◄ ►</span> to know more about me</p>`,
-    `hola`
+
+    `<p>Computer engineering (CS) student.</p>
+    <p>Passionate about programming in general, <br>trying to focus on low level development <br>and (recently) game development as well.</p>`
 ];
 
 const carRight = `

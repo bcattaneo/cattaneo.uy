@@ -5,8 +5,8 @@ html {
 }
 
 a {
-    color: #C0C0C0;
-    text-decoration: none;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 .game {
