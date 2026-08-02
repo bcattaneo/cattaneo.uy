@@ -1,0 +1,24 @@
+title: Bruno Cattáneo
+description: >-
+  Ingeniero en Informática, investigador y docente. R&D en IA, PLN, LLMs y agentes.
+url: "https://cattaneo.uy"
+baseurl: ""
+
+author: Bruno Cattáneo
+linkedin_url: "https://www.linkedin.com/in/bruno-catt%C3%A1neo"
+
+# Jekyll only processes these known top-level content dirs by default (es/, en/)
+# No theme, no plugins beyond what GitHub Pages supports natively — keeps the
+# build working with plain `git push`, no Actions workflow required.
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,15 @@
+{% assign t = site.data.ui[page.lang] %}
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="brand" href="/{{ page.lang }}/">Bruno Cattáneo</a>
+    <div class="nav-links">
+      <a href="/{{ page.lang }}/" {% if page.section == 'home' %}class="active"{% endif %}>{{ t.nav_home }}</a>
+      {% if page.lang == 'es' %}
+      <a href="/es/cursos/" {% if page.section == 'teaching' %}class="active"{% endif %}>{{ t.nav_teaching }}</a>
+      {% else %}
+      <a href="/en/teaching/" {% if page.section == 'teaching' %}class="active"{% endif %}>{{ t.nav_teaching }}</a>
+      {% endif %}
+      <a class="lang-toggle" href="{{ page.alt_url }}">{{ t.toggle_label }}</a>
+    </div>
+  </nav>
+</header>

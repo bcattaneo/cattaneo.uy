@@ -1,0 +1,23 @@
+es:
+  nav_home: Inicio
+  nav_teaching: Cursos
+  toggle_label: EN
+  research_heading: Investigación
+  teaching_heading: Docencia
+  contact_heading: Contacto
+  other_courses_heading: Otros cursos dictados
+  schedule_heading: Cronograma
+  back_to_teaching: ← Volver a Cursos
+  footer_note: Sitio construido con Jekyll.
+
+en:
+  nav_home: Home
+  nav_teaching: Teaching
+  toggle_label: ES
+  research_heading: Research
+  teaching_heading: Teaching
+  contact_heading: Contact
+  other_courses_heading: Other courses taught previously
+  schedule_heading: Schedule
+  back_to_teaching: ← Back to Teaching
+  footer_note: Site built with Jekyll.
