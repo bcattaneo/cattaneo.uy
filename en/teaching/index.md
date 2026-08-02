@@ -13,15 +13,15 @@ Courses I currently teach at UCUDAL:
 
 <ul class="course-list">
   <li>
-    <a href="/en/teaching/paradigms-1/">Programming Paradigms 1</a>
+    <a href="{% include relurl.html to='/en/teaching/paradigms-1/' %}">Programming Paradigms 1</a>
     <p>Introduction to the main programming paradigms: imperative, functional and object-oriented.</p>
   </li>
   <li>
-    <a href="/en/teaching/paradigms-2/">Programming Paradigms 2</a>
+    <a href="{% include relurl.html to='/en/teaching/paradigms-2/' %}">Programming Paradigms 2</a>
     <p>Continuation of Paradigms 1, with emphasis on functional and logic programming.</p>
   </li>
   <li>
-    <a href="/en/teaching/ai-1/">Artificial Intelligence 1</a>
+    <a href="{% include relurl.html to='/en/teaching/ai-1/' %}">Artificial Intelligence 1</a>
     <p>Introduction to the foundations and classic techniques of artificial intelligence.</p>
   </li>
 </ul>

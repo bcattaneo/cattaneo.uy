@@ -8,7 +8,7 @@ description: Software engineer, researcher and lecturer.
 ---
 
 <div class="profile">
-  <img src="/assets/img/bruno.jpg" alt="Bruno Cattáneo">
+  <img src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
   <div class="profile-intro">
     <h1>Bruno Cattáneo</h1>
     <p>Computer Engineer · Senior R&amp;D Engineer at DigitalSense</p>
@@ -33,11 +33,11 @@ My master's thesis is on **adversarial attacks on LLMs**.
 
 I currently teach the following courses at the [School of Engineering, Universidad Católica del Uruguay (FIT, UCUDAL)](https://ucu.edu.uy/):
 
-- [Programming Paradigms 1](/en/teaching/paradigms-1/)
-- [Programming Paradigms 2](/en/teaching/paradigms-2/)
-- [Artificial Intelligence 1](/en/teaching/ai-1/)
+- [Programming Paradigms 1]({% include relurl.html to='/en/teaching/paradigms-1/' %})
+- [Programming Paradigms 2]({% include relurl.html to='/en/teaching/paradigms-2/' %})
+- [Artificial Intelligence 1]({% include relurl.html to='/en/teaching/ai-1/' %})
 
-See the [Teaching section](/en/teaching/) for schedules and materials.
+See the [Teaching section]({% include relurl.html to='/en/teaching/' %}) for schedules and materials.
 
 ## Contact
 

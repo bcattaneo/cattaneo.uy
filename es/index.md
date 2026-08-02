@@ -8,7 +8,7 @@ description: Ingeniero en Informática, investigador y docente.
 ---
 
 <div class="profile">
-  <img src="/assets/img/bruno.jpg" alt="Bruno Cattáneo">
+  <img src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
   <div class="profile-intro">
     <h1>Bruno Cattáneo</h1>
     <p>Ingeniero en Informática · Senior R&amp;D Engineer en DigitalSense</p>
@@ -33,11 +33,11 @@ Mi tesis de maestría es sobre **ataques adversarios a LLMs**.
 
 Actualmente dicto los siguientes cursos en la [Facultad de Ingeniería, Universidad Católica del Uruguay (FIT, UCUDAL)](https://ucu.edu.uy/):
 
-- [Paradigmas de Programación 1](/es/cursos/paradigmas-1/)
-- [Paradigmas de Programación 2](/es/cursos/paradigmas-2/)
-- [Inteligencia Artificial 1](/es/cursos/ia-1/)
+- [Paradigmas de Programación 1]({% include relurl.html to='/es/cursos/paradigmas-1/' %})
+- [Paradigmas de Programación 2]({% include relurl.html to='/es/cursos/paradigmas-2/' %})
+- [Inteligencia Artificial 1]({% include relurl.html to='/es/cursos/ia-1/' %})
 
-Ver la [sección de Cursos](/es/cursos/) para cronogramas y material.
+Ver la [sección de Cursos]({% include relurl.html to='/es/cursos/' %}) para cronogramas y material.
 
 ## Contacto
 

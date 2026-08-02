@@ -1,0 +1,9 @@
+{%- comment -%}
+  Usage: {% include relurl.html to="/es/cursos/paradigmas-1/" %}
+  Outputs `to` as a path relative to the current page's directory depth,
+  so it resolves correctly whether the site is served at the domain root
+  or under a project-pages subpath (e.g. /cattaneo.uy/) — no baseurl needed.
+{%- endcomment -%}
+{%- assign _depth = page.url | remove_first: "/" | split: "/" | size -%}
+{%- capture _prefix -%}{%- for i in (1.._depth) -%}../{%- endfor -%}{%- endcapture -%}
+{{- _prefix -}}{{- include.to | remove_first: "/" -}}

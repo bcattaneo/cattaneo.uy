@@ -6,18 +6,18 @@ sitemap: false
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/es/">
+  <meta http-equiv="refresh" content="0; url=es/">
   <title>Bruno Cattáneo</title>
   <script>
     (function () {
       var stored = localStorage.getItem("lang");
       var browser = (navigator.language || "es").slice(0, 2);
       var lang = stored || (browser === "es" ? "es" : "en");
-      window.location.replace("/" + lang + "/");
+      window.location.replace(lang + "/");
     })();
   </script>
 </head>
 <body>
-  <p>Bruno Cattáneo — <a href="/es/">Español</a> / <a href="/en/">English</a></p>
+  <p>Bruno Cattáneo — <a href="es/">Español</a> / <a href="en/">English</a></p>
 </body>
 </html>
