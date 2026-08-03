@@ -1,0 +1,21 @@
+{%- comment -%}
+  Usage: {% include relurl.html to="/es/cursos/paradigmas-1/" %}
+  Outputs `to` as a path relative to the current page's directory depth,
+  so it resolves correctly whether the site is served at the domain root
+  or under a project-pages subpath (e.g. /cattaneo.uy/) — no baseurl needed.
+
+  Handles both pretty permalinks (page.url ends in "/", e.g. ".../foo/"
+  backed by ".../foo/index.html") and flat file permalinks (page.url ends
+  in a filename, e.g. ".../foo.html") — in the latter case the last path
+  segment is the file itself, not a directory, so it doesn't count towards
+  the "../" depth.
+{%- endcomment -%}
+{%- assign _segments = page.url | remove_first: "/" | split: "/" -%}
+{%- assign _last_char = page.url | slice: -1 -%}
+{%- if _last_char == "/" -%}
+  {%- assign _depth = _segments | size -%}
+{%- else -%}
+  {%- assign _depth = _segments | size | minus: 1 -%}
+{%- endif -%}
+{%- capture _prefix -%}{%- for i in (1.._depth) -%}../{%- endfor -%}{%- endcapture -%}
+{{- _prefix -}}{{- include.to | remove_first: "/" -}}

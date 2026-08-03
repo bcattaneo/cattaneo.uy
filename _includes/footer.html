@@ -1,0 +1,8 @@
+{% assign t = site.data.ui[page.lang] %}
+<footer class="site-footer">
+  <p>
+    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a>
+    · © {{ "now" | date: "%Y" }} {{ site.author }}
+  </p>
+  <p class="footer-note">{{ t.footer_note }}</p>
+</footer>

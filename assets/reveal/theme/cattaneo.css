@@ -1,0 +1,261 @@
+/*
+ * Custom reveal.js theme for cattaneo.uy course slides.
+ * Structure follows reveal.js's own theme convention (CSS custom properties
+ * consumed by reveal.css), values/rules tailored to look like the original
+ * Google-IO-style deck: left-aligned, dark-gray headings, gray code blocks.
+ */
+
+:root {
+  --r-background: #ffffff;
+  --r-background-color: #ffffff;
+  --r-main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --r-main-font-size: 32px;
+  --r-main-color: #333333;
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --r-heading-color: #222222;
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: 700;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 2.2em;
+  --r-heading2-size: 1.6em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-code-font: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  --r-link-color: #1f4fd8;
+  --r-link-color-dark: #17399e;
+  --r-link-color-hover: #3a67e8;
+  --r-selection-background-color: #c7d7ff;
+  --r-selection-color: #222222;
+}
+
+.reveal-viewport {
+  background: var(--r-background);
+  background-color: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  color: var(--r-main-color);
+  font-weight: 400;
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+/* Left-align and top-align slide content (instead of reveal.js's centered default) */
+.reveal .slides,
+.reveal .slides section {
+  text-align: left;
+}
+
+/* Consistent breathing room from the slide edges, on every slide. */
+.reveal .slides section {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  word-wrap: break-word;
+}
+
+.reveal h1 { font-size: var(--r-heading1-size); text-shadow: var(--r-heading1-text-shadow); }
+.reveal h2 { font-size: var(--r-heading2-size); }
+.reveal h3 { font-size: var(--r-heading3-size); font-weight: 400; color: #999999; }
+.reveal h4 { font-size: var(--r-heading4-size); }
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.3;
+}
+
+.reveal h1:last-child, .reveal h2:last-child, .reveal h3:last-child,
+.reveal h4:last-child, .reveal h5:last-child, .reveal h6:last-child {
+  margin-bottom: 0;
+}
+
+.reveal img, .reveal video, .reveal iframe { max-width: 95%; max-height: 95%; }
+
+.reveal strong, .reveal b { font-weight: 700; }
+.reveal em { font-style: italic; }
+
+/* Bullet style matching the original deck: "·" for level 1, "-" for level 2+ */
+.reveal ul, .reveal ol {
+  display: block;
+  margin: 0 0 0 0.6em;
+}
+.reveal ul { list-style: none; }
+.reveal ul > li { position: relative; padding-left: 0.9em; }
+.reveal ul > li::before {
+  content: "\00b7";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+.reveal ul ul { margin-left: 1.2em; }
+.reveal ul ul > li::before { content: "-"; }
+.reveal ol { list-style-type: decimal; margin-left: 1em; }
+
+.reveal dt { font-weight: 700; }
+.reveal dd { margin-left: 40px; }
+
+.reveal blockquote {
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  font-style: italic;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.reveal blockquote p:first-child, .reveal blockquote p:last-child { display: inline-block; }
+.reveal q { font-style: italic; }
+
+.reveal pre {
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.3em;
+  display: block;
+  position: relative;
+  background: #e8e8e8;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2;
+}
+.reveal pre code {
+  max-height: 500px;
+  padding: 16px 20px;
+  display: block;
+  overflow: auto;
+  background: transparent;
+  border-radius: 6px;
+}
+
+.reveal table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+}
+.reveal table th { font-weight: 700; }
+.reveal table th, .reveal table td {
+  text-align: left;
+  border-bottom: 1px solid;
+  padding: 0.2em 0.5em;
+}
+
+.reveal sup { vertical-align: super; font-size: smaller; }
+.reveal sub { vertical-align: sub; font-size: smaller; }
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.reveal a:hover { color: var(--r-link-color-hover); text-shadow: none; }
+
+.reveal .slide-number {
+  color: #999999;
+  background: transparent;
+}
+
+.reveal .controls { color: var(--r-link-color); }
+.reveal .progress { color: var(--r-link-color); background: rgba(0, 0, 0, 0.2); }
+
+/* Section/title slides: reveal.js auto-detects dark data-background-color
+   and adds this class, flipping heading + body text to white. */
+section.has-dark-background,
+section.has-dark-background h1,
+section.has-dark-background h2,
+section.has-dark-background h3,
+section.has-dark-background h4,
+section.has-dark-background h5,
+section.has-dark-background h6 {
+  color: #ffffff;
+}
+
+/* Cover/section-divider slides (title slide + unit dividers): identified by
+   having an explicit `data-background-color` (set via a per-slide Markdown
+   attribute comment), NOT a custom class — the reveal.js markdown plugin's
+   `.slide: class="..."` attribute mechanism uses `setAttribute("class", ...)`
+   under the hood, which can race with/get clobbered by reveal.js's own
+   present/past/future state classes on that same element. `data-background-*`
+   is read directly and reliably by reveal.js core itself (see the
+   `has-dark-background` rule above), so we key off that instead.
+
+   Any list content stays in its natural top position (unlike regular
+   top-anchored slides, this is the same position), and the heading is
+   pushed down to the bottom of the slide via `margin-top: auto` in a flex
+   column — a big gap opens up between whatever comes before it (a list, on
+   divider slides) and the heading itself, matching the original deck's
+   "muted agenda preview up top" layout — the list stays put, but the heading
+   (title slide's h1+h3 pair, or a divider's standalone h2) is vertically
+   centered within whatever space is left below the list, via a flexbox
+   "auto margins on both sides" trick: an auto margin *before* the heading
+   group and another *after* it split the leftover space evenly, floating
+   the group in the middle instead of pinning it to the top or bottom. The
+   title slide's h3 (subtitle) carries the "after" auto margin so it stays
+   right under h1 with just its normal small margin, not detached from it;
+   a divider's h2 has no subtitle following it, so it carries both margins
+   itself and centers alone. */
+.reveal .slides section[data-background-color] {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+.reveal .slides section[data-background-color] > ul { order: 1 !important; }
+.reveal .slides section[data-background-color] > h1 {
+  order: 2 !important;
+  margin-top: auto !important;
+}
+.reveal .slides section[data-background-color] > h2 {
+  order: 2 !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.reveal .slides section[data-background-color] > h3,
+.reveal .slides section[data-background-color] > p {
+  order: 3 !important;
+  margin-bottom: auto !important;
+}
+
+/* On dark dividers, the list above the title reads as de-emphasized/muted,
+   not full white like the title itself. */
+.reveal .slides section[data-background-color].has-dark-background ul,
+.reveal .slides section[data-background-color].has-dark-background ul li {
+  color: #b3b3b3;
+}
