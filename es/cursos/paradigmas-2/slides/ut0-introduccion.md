@@ -41,13 +41,13 @@ De completar los cursos de manera exitosa, el estudiante debería ser capaz de:
 
 ## Cronograma
 
-- **UT0 Introducción al curso**: 10 de agosto.
-- **UT1 Programación funcional**: 17 al 31 de agosto.
-- **UT2 Generación de código**: 7 al 21 de setiembre.
-- **UT3 Programación asincrónica**: 28 de setiembre al 12 de octubre.
-- **UT4 Interpretación abstracta y transformaciones de código**: 19 de octubre al 9 de noviembre.
-- **UT5 Lenguajes de consulta**: 16 al 23 de noviembre.
-- **Cierre del curso**: 30 de noviembre.
+- **UT0 Introducción al curso**: 6 de agosto.
+- **UT1 Programación funcional**: 13 al 27 de agosto.
+- **UT2 Generación de código**: 3 al 17 de setiembre.
+- **UT3 Programación asincrónica**: 24 de setiembre al 15 de octubre.
+- **UT4 Interpretación abstracta y transformaciones de código**: 22 de octubre al 5 de noviembre.
+- **UT5 Lenguajes de consulta**: 12 al 19 de noviembre.
+- **Cierre del curso**: 26 de noviembre.
 
 ---
 
