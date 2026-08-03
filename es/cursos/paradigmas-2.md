@@ -33,6 +33,8 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 
 *Nota: no hay clase entre el 28 de setiembre y el 2 de octubre (Semana UCU).*
 
+[Descargar calendario (.ics)]({% include relurl.html to='/es/cursos/paradigmas-2/cronograma.ics' %}) — importable en Google Calendar y otros.
+
 ## Material
 
 - [UT0 — Introducción al curso]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut0-introduccion.html' %}) (presentación)
