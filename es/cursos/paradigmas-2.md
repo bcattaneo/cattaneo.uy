@@ -33,6 +33,10 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 
 *Nota: no hay clase entre el 28 de setiembre y el 2 de octubre (Semana UCU).*
 
+## Material
+
+- [UT0 — Introducción al curso]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut0-introduccion.html' %}) (presentación)
+
 ## Evaluación
 
 - 25% cuestionarios de preparación (RAT) individuales

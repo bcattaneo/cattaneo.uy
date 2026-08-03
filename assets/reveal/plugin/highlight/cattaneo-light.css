@@ -1,0 +1,35 @@
+/* Light code theme for reveal.js slides, matching the site's minimal look. */
+.hljs {
+  background: #e8e8e8;
+  color: #333333;
+}
+.hljs-keyword,
+.hljs-operator {
+  color: #0033b3;
+}
+.hljs-literal,
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-type {
+  color: #c92c2c;
+}
+.hljs-string,
+.hljs-regexp {
+  color: #067d17;
+}
+.hljs-comment {
+  color: #7f7f7f;
+  font-style: italic;
+}
+.hljs-number {
+  color: #1750eb;
+}
+.hljs-title.function_,
+.hljs-attr,
+.hljs-property,
+.hljs-params {
+  color: #333333;
+}
+.hljs-punctuation {
+  color: #333333;
+}
