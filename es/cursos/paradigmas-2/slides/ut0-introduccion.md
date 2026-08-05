@@ -58,22 +58,25 @@ De completar los cursos de manera exitosa, el estudiante debería ser capaz de:
   - **5%** de cuestionarios de preparación (RAT) en equipos.
   - **35%** en trabajos de aplicación realizados en equipo.
   - **35%** en pruebas individuales al final de cada unidad temática.
-- Todas las calificaciones grupales se ponderan por la asistencia.
+- _**Todas las calificaciones grupales se ponderan por la asistencia**_.
 - Aprobación directa sin examen.
 
 ---
 
 ## Trabajo en equipos
 
-- 💡 Metodología TBL.
+- 💡 **Metodología TBL**.
   - RAT al inicio de cada UT.
   - Trabajo en equipos en clase.
-- **Webasignatura**
+- 🌎 **Webasignatura**
   - Material de referencia.
   - Entregas.
-- **Discord**
+- 💬 **Discord**
   - Interacción del equipo.
   - Consultas en privado al docente.
+- 💻 **Github**
+  - Sincronizar código.
+  - _Portafolio TAs_.
 
 ---
 
