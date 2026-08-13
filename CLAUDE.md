@@ -89,6 +89,8 @@ When the user hands over an old slide deck (e.g. a pandoc/Google-IO-style export
 
 To add a brand-new deck (not converting anything): copy an existing `.html`/`.md` pair, update the `permalink` and `<title>` in the `.html`, replace the `.md` content (title slide + section-divider slides need the `data-background-color` attribute comment, see above), and link it from the course page via `{% include relurl.html to='/es/cursos/.../slides/....html' %}` (see the "Material" section pattern in `es/cursos/paradigmas-2.md`).
 
+**Withholding a deck until its unit is over**: this is a fully static site with no backend/Actions, so there's no real access control available — anything client-side (a JS password prompt, hiding a `<section>` with CSS) is cosmetic, since the full page is still fetched by the browser regardless. The convention used instead is *unlisting*: the deck's `.html`/`.md` pair is committed and deployed as usual (so the user can reach it directly by URL), but its entry in the course page's "Material" list is written as plain struck-through text instead of a Markdown link — e.g. `~~UT1 — Programación funcional~~ (presentación disponible al finalizar la unidad)` instead of `[UT1 — Programación funcional]({% include relurl.html to='...' %})`. kramdown's `input: GFM` (see `_config.yml`) renders `~~...~~` as `<del>`, so no extra config is needed. This only deters casual browsing, not URL-guessing — the deck is still live at its normal permalink the whole time. Once the unit wraps up, swap the struck-through text back for a real link.
+
 ## Bilingual content
 
 Every content page has front matter:

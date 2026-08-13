@@ -38,6 +38,7 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 ## Material
 
 - [UT0 — Introducción al curso]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut0-introduccion.html' %}) (presentación)
+- ~~UT1 — Programación funcional~~ (presentación disponible al finalizar la unidad)
 
 ## Evaluación
 

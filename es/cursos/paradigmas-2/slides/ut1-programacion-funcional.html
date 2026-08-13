@@ -1,0 +1,36 @@
+---
+permalink: /es/cursos/paradigmas-2/slides/ut1-programacion-funcional.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Programación funcional · Paradigmas de Programación 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/reset.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/reveal.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/theme/cattaneo.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/plugin/highlight/cattaneo-light.css' %}">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="ut1-programacion-funcional.md"></section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from "{% include relurl.html to='/assets/reveal/reveal.esm.js' %}";
+    import Markdown from "{% include relurl.html to='/assets/reveal/plugin/markdown.esm.js' %}";
+    import Highlight from "{% include relurl.html to='/assets/reveal/plugin/highlight.esm.js' %}";
+
+    Reveal.initialize({
+      hash: true,
+      center: false,
+      slideNumber: 'c/t',
+      plugins: [Markdown, Highlight]
+    });
+  </script>
+</body>
+</html>
