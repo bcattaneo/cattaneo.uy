@@ -22,7 +22,7 @@ Para cursar de manera exitosa, el estudiante previamente debería ser capaz de:
 
 - *Programar* de manera rudimentaria en (al menos) un lenguaje de programación.
 - Diseñar *estructuras de datos* arborescentes y algoritmos que las utilicen.
-- *Comunicarse efectivamente* a través de herramientas de mensajería y videoconferencia en línea.
+<!-- - *Comunicarse efectivamente* a través de herramientas de mensajería y videoconferencia en línea. -->
 
 En todas las clases se necesitará de una computadora personal.
 
