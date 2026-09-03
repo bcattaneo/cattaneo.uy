@@ -24,12 +24,13 @@ Like Paradigms 1, the course is based on **Team-Based Learning**: each unit comb
 | Date | Unit |
 |---|---|
 | August 6 | Introduction to the course |
-| August 13–27 | Functional programming — Haskell |
-| September 3–17 | Code generation — algebraic types and Common Intermediate Language (.NET) |
-| September 24–October 15 | Asynchronous programming — JavaScript (ES2022+) |
-| October 22–November 5 | Abstract interpretation and code transformations — Babel/EcmaScript |
-| November 12–19 | Query languages — SQL |
-| November 26 | Course wrap-up |
+| August 13–September 3 | Functional programming — Haskell |
+| September 10–24 | Code generation — algebraic types and Common Intermediate Language (.NET) |
+| October 8–22 | Asynchronous programming — JavaScript (ES2022+) |
+| October 29–November 12 | Abstract interpretation and code transformations — Babel/EcmaScript |
+| November 19–26 | Query languages — SQL |
+
+*Note: no class on August 27.*
 
 *Note: no classes between September 28 and October 2 (Semana UCU).*
 

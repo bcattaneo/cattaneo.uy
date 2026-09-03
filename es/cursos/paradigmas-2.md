@@ -24,12 +24,13 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 | Fecha | Unidad temática |
 |---|---|
 | 6 de agosto | Introducción al curso |
-| 13 al 27 de agosto | Programación funcional — Haskell |
-| 3 al 17 de setiembre | Generación de código — tipos algebraicos y Common Intermediate Language (.NET) |
-| 24 de setiembre al 15 de octubre | Programación asincrónica — JavaScript (ES2022+) |
-| 22 de octubre al 5 de noviembre | Interpretación abstracta y transformaciones de código — Babel/EcmaScript |
-| 12 al 19 de noviembre | Lenguajes de consulta — SQL |
-| 26 de noviembre | Cierre del curso |
+| 13 de agosto al 3 de setiembre | Programación funcional — Haskell |
+| 10 al 24 de setiembre | Generación de código — tipos algebraicos y Common Intermediate Language (.NET) |
+| 8 al 22 de octubre | Programación asincrónica — JavaScript (ES2022+) |
+| 29 de octubre al 12 de noviembre | Interpretación abstracta y transformaciones de código — Babel/EcmaScript |
+| 19 al 26 de noviembre | Lenguajes de consulta — SQL |
+
+*Nota: no hay clase el 27 de agosto.*
 
 *Nota: no hay clase entre el 28 de setiembre y el 2 de octubre (Semana UCU).*
 
