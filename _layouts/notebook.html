@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign t = site.data.ui[page.lang] %}
+<article class="course notebook">
+  <p><a class="back-link" href="{% include relurl.html to=page.course_url %}">← {{ page.course_title }}</a></p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="course-summary">{{ page.summary }}</p>{% endif %}
+  <p class="notebook-actions">
+    <a class="button" href="https://colab.research.google.com/github/{{ site.github_repo }}/blob/master{{ page.notebook }}">{{ t.open_in_colab }}</a>
+    <a class="button" href="{% include relurl.html to=page.notebook %}" download>{{ t.download_notebook }}</a>
+  </p>
+
+  {{ content }}
+</article>

@@ -5,6 +5,9 @@ url: "https://bcattaneo.github.io"
 baseurl: "/cattaneo.uy"
 
 author: Bruno Cattáneo
+# Used to build "Open in Colab" links for course notebooks (_layouts/notebook.html).
+github_repo: bcattaneo/cattaneo.uy
+
 linkedin_url: "https://www.linkedin.com/in/bruno-catt%C3%A1neo"
 
 # Jekyll only processes these known top-level content dirs by default (es/, en/)

@@ -169,3 +169,46 @@ th, td {
 th {
   background: rgba(127, 127, 127, 0.08);
 }
+
+/* Code blocks (course notebooks). Rouge token colors kept minimal. */
+pre {
+  background: rgba(127, 127, 127, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+}
+:not(pre) > code {
+  background: rgba(127, 127, 127, 0.12);
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+.highlight .k, .highlight .kn, .highlight .kd, .highlight .kc, .highlight .ow { color: #1f4fd8; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sa, .highlight .si { color: #2e7d32; }
+.highlight .c, .highlight .c1, .highlight .cm { color: #888888; font-style: italic; }
+.highlight .mi, .highlight .mf, .highlight .nb, .highlight .bp { color: #c0392b; }
+@media (prefers-color-scheme: dark) {
+  .highlight .k, .highlight .kn, .highlight .kd, .highlight .kc, .highlight .ow { color: #7aa2ff; }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sa, .highlight .si { color: #81c784; }
+  .highlight .mi, .highlight .mf, .highlight .nb, .highlight .bp { color: #ef8a7a; }
+}
+
+.notebook-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+}
+.button:hover { background: var(--accent); color: var(--bg); text-decoration: none; }

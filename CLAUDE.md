@@ -91,6 +91,14 @@ To add a brand-new deck (not converting anything): copy an existing `.html`/`.md
 
 **Withholding a deck until its unit is over**: this is a fully static site with no backend/Actions, so there's no real access control available — anything client-side (a JS password prompt, hiding a `<section>` with CSS) is cosmetic, since the full page is still fetched by the browser regardless. The convention used instead is *unlisting*: the deck's `.html`/`.md` pair is committed and deployed as usual (so the user can reach it directly by URL), but its entry in the course page's "Material" list is written as plain struck-through text instead of a Markdown link — e.g. `~~UT1 — Programación funcional~~ (presentación disponible al finalizar la unidad)` instead of `[UT1 — Programación funcional]({% include relurl.html to='...' %})`. kramdown's `input: GFM` (see `_config.yml`) renders `~~...~~` as `<del>`, so no extra config is needed. This only deters casual browsing, not URL-guessing — the deck is still live at its normal permalink the whole time. Once the unit wraps up, swap the struck-through text back for a real link.
 
+## Course notebooks (Jupyter)
+
+Course notebooks (currently IA 1, `es/cursos/ia-1/notebooks/`) are published as a pair: the student `.ipynb` (fill-in-the-blank `___`, no outputs; static file, downloadable and opened in Colab via `https://colab.research.google.com/github/{{ site.github_repo }}/blob/master/<path>`, so it only works once pushed) and a `.md` page with `layout: notebook` (`_layouts/notebook.html`) showing the same content as Markdown + code blocks, wrapped in `{% raw %}`.
+
+**Both files are generated — don't edit them by hand.** The source of truth lives outside this repo, in `~/projects/ucu_cursos/inteligencia_artificial_1/notebooks/`: one `NN-name.py` per notebook (jupytext-style `# %%` / `# %% [markdown]` cells, blanks written as `[[answer]]`) plus `build.py`, which executes the solution version (saved to `solucion/`, never published) and writes the student `.ipynb` + `.md` page into this repo. It needs a Python env with `nbformat`, `nbclient`, `ipykernel` and whatever the notebook imports. Notebook prose is neutral Spanish, simple (many students aren't CS), lightly commented, and avoids em dashes.
+
+Link each notebook from the course page's "Material" list as a sub-item under its class's slide deck, and mark when to do it in the deck with a light-blue cover slide (`<!-- .slide: data-background-color="#e3ebff" -->`).
+
 ## Bilingual content
 
 Every content page has front matter:

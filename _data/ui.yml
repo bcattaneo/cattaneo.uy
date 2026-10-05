@@ -8,6 +8,8 @@ es:
   other_courses_heading: Otros cursos dictados
   schedule_heading: Cronograma
   back_to_teaching: ← Volver a Cursos
+  open_in_colab: Abrir en Google Colab
+  download_notebook: Descargar notebook (.ipynb)
   footer_note: Sitio construido con Jekyll.
 
 en:
@@ -20,4 +22,6 @@ en:
   other_courses_heading: Other courses taught previously
   schedule_heading: Schedule
   back_to_teaching: ← Back to Teaching
+  open_in_colab: Open in Google Colab
+  download_notebook: Download notebook (.ipynb)
   footer_note: Site built with Jekyll.

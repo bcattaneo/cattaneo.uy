@@ -259,3 +259,29 @@ section.has-dark-background h6 {
 .reveal .slides section[data-background-color].has-dark-background ul li {
   color: #b3b3b3;
 }
+
+/* Two-column "text left, figure(s) right" layout for content slides:
+   <div class="cols"><div>…bullets…</div><div class="fig">…images…</div></div>
+   (blank lines inside the divs so the markdown plugin still parses their
+   contents as Markdown). Images in .fig stack vertically and shrink to fit. */
+.reveal .cols {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.reveal .cols > div { flex: 1 1 0; min-width: 0; }
+.reveal .cols > .fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+}
+.reveal .cols > .fig p { margin: 0; }
+.reveal .cols > .fig img { display: block; max-width: 100%; max-height: 440px; margin: 0 auto; }
+.reveal .cols > .fig.stack img { max-height: 220px; }
+/* A single wide figure below the slide's text, instead of beside it. */
+.reveal .fig-below { text-align: center; }
+.reveal .fig-below img { max-height: 300px; }
+/* Denser content (wide tables, exercise statements): <div class="small">…</div> */
+.reveal .small { font-size: 0.72em; }
+.reveal .small pre { font-size: 0.75em; }

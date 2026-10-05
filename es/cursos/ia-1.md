@@ -39,6 +39,12 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
 | 13 | 16 de noviembre | Pipeline, release, rollback y preparación del Final |
 | 14 | 23 de noviembre | Prueba Final: cuestionario, modificación individual, presentación y defensa grupal |
 
+## Material
+
+- [Clase 9 — Procesamiento del Lenguaje Natural]({% include relurl.html to='/es/cursos/ia-1/slides/clase-09-nlp.html' %}) (presentación)
+  - [Notebook 1: Sentimiento con TF-IDF]({% include relurl.html to='/es/cursos/ia-1/notebooks/01-sentimiento-tfidf/' %})
+  - [Notebook 2: Sentimiento con embeddings]({% include relurl.html to='/es/cursos/ia-1/notebooks/02-sentimiento-embeddings/' %})
+
 ## Evaluación
 
 | Instancia | Modalidad | Puntos |
