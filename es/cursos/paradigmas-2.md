@@ -42,6 +42,7 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 - [UT1 — Programación funcional]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut1-programacion-funcional.html' %}) (presentación)
 - [UT2 — Generación de código]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut2-generacion-de-codigo.html' %}) (presentación)
 - ~~UT3 — Programación asincrónica~~ (presentación disponible al finalizar la unidad)
+  - [Clase 1: JavaScript, promesas y async / await]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut3-asincronismo-clase1.html' %}) (presentación parcial)
 
 ## Evaluación
 
