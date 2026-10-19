@@ -1,0 +1,37 @@
+---
+permalink: /es/cursos/ia-1/slides/clase-10-llms.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>LLMs, prompting y RAG · Inteligencia Artificial 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/reset.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/reveal.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/theme/cattaneo.css' %}">
+  <link rel="stylesheet" href="{% include relurl.html to='/assets/reveal/plugin/highlight/cattaneo-light.css' %}">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="clase-10-llms.md"></section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from "{% include relurl.html to='/assets/reveal/reveal.esm.js' %}";
+    import Markdown from "{% include relurl.html to='/assets/reveal/plugin/markdown.esm.js' %}";
+    import Highlight from "{% include relurl.html to='/assets/reveal/plugin/highlight.esm.js' %}";
+    import Fit from "{% include relurl.html to='/assets/reveal/plugin/fit.esm.js' %}";
+
+    Reveal.initialize({
+      hash: true,
+      center: false,
+      slideNumber: 'c/t',
+      plugins: [Markdown, Highlight, Fit]
+    });
+  </script>
+</body>
+</html>

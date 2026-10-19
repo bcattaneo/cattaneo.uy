@@ -119,7 +119,7 @@ ConfusionMatrixDisplay.from_predictions(
 - ¿Supera al azar (33%)?
 - ¿Qué clase es la más difícil? ¿Con cuál se confunde más?
 
-Anotar el accuracy: lo vamos a comparar con los notebooks 2 y 3.
+Anotar el accuracy: lo vamos a comparar con los notebooks 2 y 4.
 
 ## 6. ¿Qué aprendió el modelo?
 

@@ -44,6 +44,10 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
 - [Clase 9 — Procesamiento del Lenguaje Natural]({% include relurl.html to='/es/cursos/ia-1/slides/clase-09-nlp.html' %}) (presentación)
   - [Notebook 1: Sentimiento con TF-IDF]({% include relurl.html to='/es/cursos/ia-1/notebooks/01-sentimiento-tfidf/' %})
   - [Notebook 2: Sentimiento con embeddings]({% include relurl.html to='/es/cursos/ia-1/notebooks/02-sentimiento-embeddings/' %})
+- [Clase 10 — LLMs, prompting y RAG]({% include relurl.html to='/es/cursos/ia-1/slides/clase-10-llms.html' %}) (presentación)
+  - [Notebook 3: Cómo genera un LLM]({% include relurl.html to='/es/cursos/ia-1/notebooks/03-como-genera-un-llm/' %})
+  - [Notebook 4: Sentimiento con prompting]({% include relurl.html to='/es/cursos/ia-1/notebooks/04-sentimiento-con-prompting/' %})
+  - [Notebook 5: RAG sobre el programa del curso]({% include relurl.html to='/es/cursos/ia-1/notebooks/05-rag-programa-del-curso/' %})
 
 ## Evaluación
 

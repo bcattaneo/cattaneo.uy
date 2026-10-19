@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 316" width="940" height="316">
+<rect width="940" height="316" fill="#ffffff"/>
+<text x="10" y="28" font-size="18" fill="#999" font-family="Helvetica, Arial, sans-serif">1. Indexar (una vez)</text>
+<rect x="10" y="45" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="90.0" y="93.3" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Documentos</text>
+<rect x="200" y="45" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="280.0" y="81.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Partir en</text>
+<text x="280.0" y="104.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">chunks</text>
+<line x1="170" y1="87.0" x2="188" y2="87.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="188,80.0 188,94.0 200,87.0" fill="#4d4d4d"/>
+<rect x="390" y="45" width="160" height="84" rx="8" fill="#e3ebff" stroke="#1f4fd8" stroke-width="2"/>
+<text x="470.0" y="81.8" text-anchor="middle" font-size="19" font-weight="700" fill="#222" font-family="Helvetica, Arial, sans-serif">Modelo de</text>
+<text x="470.0" y="104.8" text-anchor="middle" font-size="19" font-weight="700" fill="#222" font-family="Helvetica, Arial, sans-serif">embeddings</text>
+<line x1="360" y1="87.0" x2="378" y2="87.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="378,80.0 378,94.0 390,87.0" fill="#4d4d4d"/>
+<rect x="580" y="45" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="660.0" y="81.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Índice</text>
+<text x="660.0" y="104.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">vectorial</text>
+<line x1="550" y1="87.0" x2="568" y2="87.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="568,80.0 568,94.0 580,87.0" fill="#4d4d4d"/>
+<text x="10" y="205" font-size="18" fill="#999" font-family="Helvetica, Arial, sans-serif">2. Responder (cada pregunta)</text>
+<rect x="10" y="222" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="90.0" y="270.3" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Pregunta</text>
+<rect x="200" y="222" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="280.0" y="258.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Buscar</text>
+<text x="280.0" y="281.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">top-k chunks</text>
+<line x1="170" y1="264.0" x2="188" y2="264.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="188,257.0 188,271.0 200,264.0" fill="#4d4d4d"/>
+<rect x="390" y="222" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="470.0" y="248.7" text-anchor="middle" font-size="17" fill="#222" font-family="Helvetica, Arial, sans-serif">Prompt:</text>
+<text x="470.0" y="269.7" text-anchor="middle" font-size="17" fill="#222" font-family="Helvetica, Arial, sans-serif">instrucciones +</text>
+<text x="470.0" y="290.7" text-anchor="middle" font-size="17" fill="#222" font-family="Helvetica, Arial, sans-serif">chunks + pregunta</text>
+<line x1="360" y1="264.0" x2="378" y2="264.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="378,257.0 378,271.0 390,264.0" fill="#4d4d4d"/>
+<rect x="580" y="222" width="160" height="84" rx="8" fill="#e3ebff" stroke="#1f4fd8" stroke-width="2"/>
+<text x="660.0" y="270.3" text-anchor="middle" font-size="19" font-weight="700" fill="#222" font-family="Helvetica, Arial, sans-serif">LLM</text>
+<line x1="550" y1="264.0" x2="568" y2="264.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="568,257.0 568,271.0 580,264.0" fill="#4d4d4d"/>
+<rect x="770" y="222" width="160" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="850.0" y="258.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Respuesta</text>
+<text x="850.0" y="281.8" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">con citas</text>
+<line x1="740" y1="264.0" x2="758" y2="264.0" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="758,257.0 758,271.0 770,264.0" fill="#4d4d4d"/>
+<polyline points="660.0,129 660.0,183.5 280.0,183.5 280.0,210" fill="none" stroke="#4d4d4d" stroke-width="2.5" stroke-dasharray="6 5"/>
+<polygon points="273.0,210 287.0,210 280.0,222" fill="#4d4d4d"/>
+</svg>
