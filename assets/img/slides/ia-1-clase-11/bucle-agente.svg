@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 300" width="940" height="300">
+<rect width="940" height="300" fill="#ffffff"/>
+<rect x="10" y="108" width="150" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="85" y="156" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Pregunta</text>
+<line x1="160" y1="150" x2="218" y2="150" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="218,143 218,157 230,150" fill="#4d4d4d"/>
+<rect x="230" y="108" width="170" height="84" rx="8" fill="#e3ebff" stroke="#1f4fd8" stroke-width="2"/>
+<text x="315" y="145" text-anchor="middle" font-size="19" font-weight="700" fill="#222" font-family="Helvetica, Arial, sans-serif">LLM</text>
+<text x="315" y="170" text-anchor="middle" font-size="16" fill="#222" font-family="Helvetica, Arial, sans-serif">decide qué hacer</text>
+<rect x="560" y="10" width="190" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="655" y="46" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Programa ejecuta</text>
+<text x="655" y="71" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">la herramienta</text>
+<polyline points="315,108 315,52 548,52" fill="none" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="548,45 548,59 560,52" fill="#4d4d4d"/>
+<text x="330" y="40" font-size="16" fill="#1f4fd8" font-family="Helvetica, Arial, sans-serif">acción: pedido de herramienta (JSON)</text>
+<polyline points="655,94 655,150 412,150" fill="none" stroke="#4d4d4d" stroke-width="2.5" stroke-dasharray="6 5"/>
+<polygon points="412,143 412,157 400,150" fill="#4d4d4d"/>
+<text x="450" y="140" font-size="16" fill="#1f4fd8" font-family="Helvetica, Arial, sans-serif">observación: resultado</text>
+<rect x="760" y="206" width="170" height="84" rx="8" fill="#f2f2f2" stroke="#4d4d4d" stroke-width="2"/>
+<text x="845" y="243" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">Respuesta</text>
+<text x="845" y="268" text-anchor="middle" font-size="19" fill="#222" font-family="Helvetica, Arial, sans-serif">final</text>
+<polyline points="315,192 315,248 748,248" fill="none" stroke="#4d4d4d" stroke-width="2.5"/>
+<polygon points="748,241 748,255 760,248" fill="#4d4d4d"/>
+<text x="330" y="236" font-size="16" fill="#1f4fd8" font-family="Helvetica, Arial, sans-serif">sin pedidos: terminar (o máximo de pasos)</text>
+</svg>

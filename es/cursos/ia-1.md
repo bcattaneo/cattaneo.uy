@@ -48,6 +48,9 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
   - [Notebook 3: Cómo genera un LLM]({% include relurl.html to='/es/cursos/ia-1/notebooks/03-como-genera-un-llm/' %})
   - [Notebook 4: Sentimiento con prompting]({% include relurl.html to='/es/cursos/ia-1/notebooks/04-sentimiento-con-prompting/' %})
   - [Notebook 5: RAG sobre el programa del curso]({% include relurl.html to='/es/cursos/ia-1/notebooks/05-rag-programa-del-curso/' %})
+- [Clase 11 — Agentes]({% include relurl.html to='/es/cursos/ia-1/slides/clase-11-agentes.html' %}) (presentación)
+  - [Notebook 6: Un agente desde cero]({% include relurl.html to='/es/cursos/ia-1/notebooks/06-agente-desde-cero/' %})
+  - [Notebook 7: Agente con LangGraph, permisos y trazas]({% include relurl.html to='/es/cursos/ia-1/notebooks/07-agente-langgraph-permisos/' %})
 
 ## Evaluación
 
