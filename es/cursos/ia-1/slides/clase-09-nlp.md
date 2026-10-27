@@ -15,8 +15,6 @@
 5. Atención y Transformers
 6. Búsqueda semántica
 
-Hilo conductor: *¿cómo convertimos texto en números que capturen su significado?*
-
 ---
 
 ## Un problema para empezar
