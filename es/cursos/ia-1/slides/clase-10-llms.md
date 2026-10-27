@@ -8,50 +8,10 @@
 
 ## Hoy
 
-1. Búsqueda semántica
-2. ¿Qué es un LLM?
-3. Prompting
-4. **RAG y grounding**
-5. Evaluación
-
----
-
-## Búsqueda semántica
-
-- Indexar y consultar
-- Léxica vs semántica
-
-<!-- .slide: data-background-color="#4d4d4d" -->
-
----
-
-## Búsqueda semántica
-
-![Pipeline de búsqueda semántica](../../../../assets/img/slides/ia-1-clase-09/busqueda-semantica.svg)
-
-- Un modelo de embeddings convierte cada texto en un vector. **Cerca = significado parecido.**
-- Documentos y consulta pasan por **el mismo modelo**. Buscar = encontrar los vectores más cercanos (coseno).
-- *"olvidé mi clave"* encuentra *"¿cómo restablezco mi contraseña?"* sin compartir palabras.
-
----
-
-## Léxica vs semántica
-
-<div class="small">
-
-| | Léxica (TF-IDF / BM25) | Semántica (embeddings) |
-|---|---|---|
-| Sinónimos y paráfrasis | ✗ | ✓ |
-| Otro idioma (modelos multilingües) | ✗ | ✓ |
-| Nombres propios, códigos, números exactos (*"IA-1"*, *"art. 37"*) | ✓ | a veces ✗ |
-| Explicar por qué devolvió un resultado | ✓ (palabras en común) | difícil |
-| Costo | muy bajo | modelo + vectores |
-
-</div>
-
-- En la práctica: **búsqueda híbrida**, combinando ambos rankings.
-- Con millones de documentos: búsqueda aproximada (ANN) en una **base de datos vectorial** (FAISS, Chroma, Qdrant, pgvector).
-- Se evalúa como cualquier modelo: consultas con su documento correcto y una métrica como **recall@k** (¿el correcto quedó entre los *k* primeros?).
+1. ¿Qué es un LLM?
+2. Prompting
+3. **RAG y grounding**
+4. Evaluación
 
 ---
 
@@ -415,7 +375,7 @@ El modelo no conoce el programa de IA 1. ¿Cómo se lo enseñamos?
 
 ![Pipeline de RAG](../../../../assets/img/slides/ia-1-clase-10/rag.svg)
 
-- La fila de arriba es la **búsqueda semántica** del principio de la clase.
+- La fila de arriba es la **búsqueda semántica** de la clase 9.
 - Lo nuevo: con los *k* chunks encontrados se arma un prompt, y el **LLM** escribe la respuesta.
 
 ---
@@ -574,7 +534,6 @@ Separar las partes dice **dónde** mejorar: no tiene sentido cambiar de LLM si e
 
 ## Resumen
 
-- Búsqueda semántica: embeddings + vecinos más cercanos.
 - Un LLM es un decoder enorme que **predice el siguiente token**. Generar = repetir, con temperatura.
 - Preentrenamiento, instrucciones y preferencias. El chat también es texto.
 - Produce texto **plausible**, no necesariamente verdadero: **alucina**.
