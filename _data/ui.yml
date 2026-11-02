@@ -2,6 +2,7 @@ es:
   nav_home: Inicio
   nav_teaching: Cursos
   toggle_label: EN
+  leet_toggle_title: Modo terminal
   research_heading: Investigación
   teaching_heading: Docencia
   contact_heading: Contacto
@@ -16,6 +17,7 @@ en:
   nav_home: Home
   nav_teaching: Teaching
   toggle_label: ES
+  leet_toggle_title: Terminal mode
   research_heading: Research
   teaching_heading: Teaching
   contact_heading: Contact

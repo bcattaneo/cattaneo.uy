@@ -8,7 +8,8 @@ description: Ingeniero en Informática, investigador y docente.
 ---
 
 <div class="profile">
-  <img src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
+  <img class="photo-normal" src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
+  <img class="photo-leet" src="{% include relurl.html to='/assets/img/bruno-leet.png' %}" alt="Bruno Cattáneo" loading="lazy">
   <div class="profile-intro">
     <h1>Bruno Cattáneo</h1>
     <p>Ingeniero en Informática · Senior R&amp;D Engineer en DigitalSense</p>

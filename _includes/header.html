@@ -10,6 +10,7 @@
       {% else %}
       <a href="{% include relurl.html to='/en/teaching/' %}" {% if page.section == 'teaching' %}class="active"{% endif %}>{{ t.nav_teaching }}</a>
       {% endif %}
+      <button type="button" class="leet-toggle" id="leet-toggle" aria-pressed="false" title="{{ t.leet_toggle_title }}">&gt;_</button>
       <a class="lang-toggle" href="{% include relurl.html to=page.alt_url %}">{{ t.toggle_label }}</a>
     </div>
   </nav>

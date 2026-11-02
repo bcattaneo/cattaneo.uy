@@ -8,7 +8,8 @@ description: Software engineer, researcher and lecturer.
 ---
 
 <div class="profile">
-  <img src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
+  <img class="photo-normal" src="{% include relurl.html to='/assets/img/bruno.jpg' %}" alt="Bruno Cattáneo">
+  <img class="photo-leet" src="{% include relurl.html to='/assets/img/bruno-leet.png' %}" alt="Bruno Cattáneo" loading="lazy">
   <div class="profile-intro">
     <h1>Bruno Cattáneo</h1>
     <p>Computer Engineer · Senior R&amp;D Engineer at DigitalSense</p>

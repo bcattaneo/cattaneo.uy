@@ -7,6 +7,17 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{% include relurl.html to='/assets/css/style.css' %}">
   <link rel="icon" href="data:,">
+  <script>
+    (function () {
+      // ?leet=1 / ?leet=0 in the URL forces the mode (and remembers it); otherwise use the saved choice.
+      var m = /[?&]leet=([01])\b/.exec(location.search), on = false;
+      try {
+        if (m) localStorage.setItem('leet', m[1]);
+        on = localStorage.getItem('leet') === '1';
+      } catch (e) { on = !!m && m[1] === '1'; }
+      if (on) document.documentElement.classList.add('leet');
+    })();
+  </script>
 </head>
 <body>
   {% include header.html %}
@@ -14,5 +25,17 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('leet-toggle');
+      if (!btn) return;
+      btn.setAttribute('aria-pressed', root.classList.contains('leet'));
+      btn.addEventListener('click', function () {
+        var on = root.classList.toggle('leet');
+        btn.setAttribute('aria-pressed', on);
+        try { localStorage.setItem('leet', on ? '1' : '0'); } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>
