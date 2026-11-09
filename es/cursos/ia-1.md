@@ -51,7 +51,7 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
 - [Clase 11 — Agentes]({% include relurl.html to='/es/cursos/ia-1/slides/clase-11-agentes.html' %}) (presentación)
   - [Notebook 6: Un agente desde cero]({% include relurl.html to='/es/cursos/ia-1/notebooks/06-agente-desde-cero/' %})
   - [Notebook 7: Agente con LangGraph, permisos y trazas]({% include relurl.html to='/es/cursos/ia-1/notebooks/07-agente-langgraph-permisos/' %})
-- [Parcial 2: laboratorio]({% include relurl.html to='/es/cursos/ia-1/parciales/Parcial_2_Inteligencia_Artificial_Parte_2_laboratorio.ipynb' %}) (notebook para abrir en Colab)
+- [Parcial 2: laboratorio](https://colab.research.google.com/github/{{ site.github_repo }}/blob/master/es/cursos/ia-1/parciales/Parcial_2_Inteligencia_Artificial_Parte_2_laboratorio.ipynb) (abrir en Google Colab)
 
 ## Evaluación
 
