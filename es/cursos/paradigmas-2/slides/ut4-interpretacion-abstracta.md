@@ -334,6 +334,96 @@ x = a1; y = a1;   ⇒   x = a1; y = x;
 
 ---
 
+## Ejemplo 1: eliminación de código inaccesible
+
+- `while (false) S` ⇒ (nada)
+
+```javascript
+function pluginWhileFalse({ types: t }) {
+  return {
+    visitor: {
+      WhileStatement: {
+        exit(path) { // Después de optimizar la condición.
+          if (t.isBooleanLiteral(path.node.test, { value: false })) {
+            path.remove();
+          }
+        }
+      }
+    }
+  };
+}
+```
+
+- ¿Está bien esto?
+
+---
+
+## Ejemplo 2: eliminación de código inaccesible
+
+- `while (0) S`, `while (NaN) S`, ... ⇒ (nada)
+
+```javascript
+function pluginWhileFalsy({ types: t }) {
+  const isFalsy = (node) =>
+    t.isBooleanLiteral(node, { value: false })
+    || t.isNumericLiteral(node, { value: 0 })
+    || t.isStringLiteral(node, { value: '' })
+    || t.isNullLiteral(node)
+    || t.isIdentifier(node, { name: 'NaN' })
+    || t.isIdentifier(node, { name: 'undefined' });
+  return {
+    visitor: {
+      WhileStatement: {
+        exit(path) { // Después de optimizar la condición.
+          if (isFalsy(path.node.test)) {
+            path.remove();
+          }
+        }
+      }
+    }
+  };
+}
+```
+
+---
+
+## Ejemplo: combinando optimizaciones
+
+```javascript
+transformSync(code, {
+  plugins: [pluginFold, pluginWhileFalsy],
+});
+```
+
+- El pliegue de constantes habilita la eliminación de código.
+  - Babel vuelve a visitar los nodos reemplazados.
+
+```javascript
+let x = 0;
+while (2 * 3 < 5) { x = x + 1; }
+return x;
+// ⇓
+let x = 0;
+return x;
+```
+
+---
+
+## Ejercicio 2.6: Más optimización de Javascript
+
+- Extender el método `optimize` del ejercicio 2.5.
+- Optimizaciones a agregar:
+  - Eliminación de código inaccesible en `do-while`.
+    - `do S while (false)` ⇒ `S`
+  - Eliminación de código inaccesible en `&&` y `||`.
+    - `false && e` ⇒ `false`, `true && e` ⇒ `e`
+    - `true || e` ⇒ `true`, `false || e` ⇒ `e`
+- Ser conservador: ante la duda, no optimizar.
+  - E.g. ¿qué pasa si `S` contiene `break` o `continue`?
+- Se entregará y calificará junto al ejercicio 2.5.
+
+---
+
 ## Epílogo
 
 - En esta UT vimos:
