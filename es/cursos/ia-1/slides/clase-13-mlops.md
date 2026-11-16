@@ -11,7 +11,6 @@
 1. MLOps
 2. LLMOps y GenAIOps
 3. **Observabilidad**
-4. Hacia la Prueba Final
 
 ---
 
