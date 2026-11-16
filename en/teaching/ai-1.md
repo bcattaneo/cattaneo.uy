@@ -33,10 +33,10 @@ Taught over 14 sessions (2 holidays). Each session combines brief preparation, e
 | 9 | October 5 | Transformers, tokenization, embeddings and semantic search |
 | — | October 12 | Holiday — async activity: semantic retrieval |
 | 10 | October 19 | LLMs, prompting, RAG, grounding and evaluation |
-| 11 | October 26 | Agents, ReAct, LangGraph, MCP, tools, permissions and traces |
+| 11 | October 26 | Agents, tools and ReAct |
 | — | November 2 | Holiday — async activity: traces, permissions, guardrails |
-| 12 | November 9 | Midterm 2 · Introduction to MLOps and the end-to-end pipeline |
-| 13 | November 16 | Pipeline, release, rollback and final exam prep |
+| 12 | November 9 | Midterm 2 |
+| 13 | November 16 | Agents (cont.): LangGraph, MCP, permissions and traces · MLOps, LLMOps and GenAIOps: release, rollback and observability |
 | 14 | November 23 | Final exam: quiz, individual modification, group presentation and defense |
 
 ## Grading

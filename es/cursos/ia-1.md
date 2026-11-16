@@ -33,10 +33,10 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
 | 9 | 5 de octubre | Transformers, tokenización, embeddings y búsqueda semántica |
 | — | 12 de octubre | Feriado — actividad asincrónica: recuperación semántica |
 | 10 | 19 de octubre | LLMs, prompting, RAG, grounding y evaluación |
-| 11 | 26 de octubre | Agentes, ReAct, LangGraph, MCP, herramientas, permisos y trazas |
+| 11 | 26 de octubre | Agentes, herramientas y ReAct |
 | — | 2 de noviembre | Feriado — actividad asincrónica: trazas, permisos, guardrails |
-| 12 | 9 de noviembre | Parcial 2 · Introducción a MLOps y al pipeline de punta a punta |
-| 13 | 16 de noviembre | Pipeline, release, rollback y preparación del Final |
+| 12 | 9 de noviembre | Parcial 2 |
+| 13 | 16 de noviembre | Agentes (cont.): LangGraph, MCP, permisos y trazas · MLOps, LLMOps y GenAIOps: release, rollback y observabilidad |
 | 14 | 23 de noviembre | Prueba Final: cuestionario, modificación individual, presentación y defensa grupal |
 
 ## Material
@@ -48,9 +48,10 @@ Se dicta en 14 clases (2 feriados). Cada encuentro combina preparación breve, e
   - [Notebook 3: Cómo genera un LLM]({% include relurl.html to='/es/cursos/ia-1/notebooks/03-como-genera-un-llm/' %})
   - [Notebook 4: Sentimiento con prompting]({% include relurl.html to='/es/cursos/ia-1/notebooks/04-sentimiento-con-prompting/' %})
   - [Notebook 5: RAG sobre el programa del curso]({% include relurl.html to='/es/cursos/ia-1/notebooks/05-rag-programa-del-curso/' %})
-- [Clase 11 — Agentes]({% include relurl.html to='/es/cursos/ia-1/slides/clase-11-agentes.html' %}) (presentación)
+- [Clases 11 y 13 — Agentes]({% include relurl.html to='/es/cursos/ia-1/slides/clase-11-agentes.html' %}) (presentación)
   - [Notebook 6: Un agente desde cero]({% include relurl.html to='/es/cursos/ia-1/notebooks/06-agente-desde-cero/' %})
   - [Notebook 7: Agente con LangGraph, permisos y trazas]({% include relurl.html to='/es/cursos/ia-1/notebooks/07-agente-langgraph-permisos/' %})
+- [Clase 13 — MLOps, LLMOps y GenAIOps]({% include relurl.html to='/es/cursos/ia-1/slides/clase-13-mlops.html' %}) (presentación)
 - [Parcial 2: laboratorio](https://colab.research.google.com/github/{{ site.github_repo }}/blob/master/es/cursos/ia-1/parciales/Parcial_2_Inteligencia_Artificial_Parte_2_laboratorio.ipynb) (abrir en Google Colab)
 
 ## Evaluación
