@@ -43,6 +43,7 @@ Al igual que Paradigmas 1, el curso está basado en **aprendizaje basado en equi
 - [UT2 — Generación de código]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut2-generacion-de-codigo.html' %}) (presentación)
 - [UT3 — Programación asincrónica]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut3-asincronismo.html' %}) (presentación)
 - [UT4 — Interpretación abstracta y transformaciones de código]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut4-interpretacion-abstracta.html' %}) (presentación)
+- [UT5 — Lenguajes de consulta]({% include relurl.html to='/es/cursos/paradigmas-2/slides/ut5-lenguajes-de-consulta.html' %}) (presentación)
 
 ## Evaluación
 
